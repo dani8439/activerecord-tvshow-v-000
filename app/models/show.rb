@@ -20,6 +20,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.popular_shows
+    all = []
     Show.where('rating > 5').each do |show|
     end     
   end
