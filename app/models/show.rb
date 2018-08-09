@@ -20,10 +20,10 @@ class Show < ActiveRecord::Base
   end
 
   def self.popular_shows
-    all = []
-    Show.where('rating > 5').each do |show|
-      all << show
-    end     
+    # all = []
+    # Show.where('rating > 5').each do |show|
+    #   all << show
+    Show.where('rating > 5')   
   end
 
   def self.shows_by_alphabetical_order
